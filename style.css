@@ -1,0 +1,214 @@
+*{
+    box-sizing: border-box;
+}
+/* body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:rgb(9, 27, 27);
+
+
+} */
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    padding-top: 40px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.card{
+    width:400px;
+    height: 350x;
+    margin: 75px auto 0;
+   
+    background-color: white;
+    box-shadow: 0 3px 30px rgba(0,0,0,.14);
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.card .card-header{
+    position: relative;
+    height: 48px;
+
+}
+.card .card-header .profile-pic{
+    width: 96px;
+    height: 96px;
+    border-radius: 1000px;
+    position:absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4.5px solid rgb(231, 225, 225);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.945);
+    /* transition: transform .2s; */
+}
+ 
+
+   
+/* .card-header img { 
+    width: 100%; 
+    transition: 0.5s all ease-in-out; 
+}  */
+
+
+
+.card .card-body{
+    padding:10px 40px;
+    
+}
+.card .card-body .full-name{
+    font-size: 22px;
+    font-weight: 600;
+    text-transform:uppercase;
+    margin:10px 0 0;
+}
+.card .card-body .study{
+    font-size: 12px;
+    color :grey;
+    margin :2px 0 0;
+}
+.card .card-body .city{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px 0 0;
+    text-shadow: gray;
+}
+.card .card-body .desc{
+    line-height:20px;
+    font-size: 17px;
+    /* line-break: normal; */
+}
+.card .social-icon{
+    font-size: 28px;
+    margin: 0 9px;;
+}
+.card .social-icon.youtube{
+    color: rgb(199, 19, 6);
+}
+.card .social-icon.facebook{
+    color: blue;
+}
+.card .social-icon.github{
+    color: rgb(56, 56, 97);
+}
+.card .social-icon.instagram{
+    color: rgb(180, 71, 20);
+}
+.card .social-icon.linkdin{
+    color: rgb(40, 98, 224);
+}
+.card .social-icon.leetcode{
+    color: rgb(78, 17, 17);
+}
+
+.card .card-footer{
+    display: table;
+    width: 100%;
+    border-top: 1px solid grey;
+}
+.card .card-footer .col{
+    display: table-cell;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+.card .card-footer .count{
+    font-size: 18px;
+    font-weight: 600;
+}
+.vr{
+    border-right: 1px solid #e6e6e6;
+}
+
+@media screen and (max-width : 575px){
+    .card{
+        width:96%;
+    }
+    .card .card-body{
+        padding: 10px 20px;
+    }
+    .card .card-footer .col{
+        padding: 0 10px;
+    }
+    .card .card-footer .count{
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+
+.social-icon.youtube:hover, .social-icon.youtube:active {
+    color: red;
+  }
+  
+  .social-icon.youtube:hover, .social-icon.youtube:active {
+    font-size: 150%;
+  }
+  /* github */
+  .social-icon.github:hover, .social-icon.github:active {
+    color: rgb(30, 34, 66);
+  }
+  
+  .social-icon.github:hover, .social-icon.github:active {
+    font-size: 150%;
+  }
+ /* insta */
+ .social-icon.instagram:hover, .social-icon.instagram:active {
+    color: rgb(238, 111, 27);
+  }
+  
+  .social-icon.instagram:hover, .social-icon.instagram:active {
+    font-size: 150%;
+  }
+  /* linkdin */
+  .social-icon.linkdin:hover, .social-icon.linkdin:active {
+    color: rgb(63, 76, 173);
+  }
+  
+  .social-icon.linkdin:hover, .social-icon.linkdin:active {
+    font-size: 150%;
+  }
+
+  /* leetcode */
+
+  .social-icon.leetcode:hover, .social-icon.leetcode:active {
+    color: rgb(49, 27, 16);
+  }
+  
+  .social-icon.leetcode:hover, .social-icon.leetcode:active {
+    font-size: 150%;
+  }
+  /* hackerrank */
+  .social-icon.hackerrank:hover, .social-icon.hackerrank:active {
+    color: rgb(30, 34, 66);
+  }
+  
+  .social-icon.hackerrank:hover, .social-icon.hackerrank:active {
+    font-size: 150%;
+  }
+
+  /* facebook */
+  .social-icon.facebook:hover, .social-icon.facebook:active {
+    color: rgb(19, 40, 197);
+  }
+  
+  .social-icon.facebook:hover, .social-icon.facebook:active {
+    font-size: 150%;
+  }
+  /* gfg */
+  .social-icon.gfg:hover, .social-icon.gfg:active {
+    color: rgb(19, 40, 197);
+  }
+  
+  .social-icon.gfg:hover, .social-icon.gfg:active {
+    font-size: 150%;
+  }
